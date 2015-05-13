@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>javascript</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+  <a href="http://www.google.com" id="foo">
+  aaa
+  </a>
+    <script type="text/javascript">
+    var myMammal = {
+      name: "Herb the Manmmal",
+      get_name: function(){
+        return this.name;
+      },
+      says: function(){
+        return this.saying || "";
+      }
+    };
+    var myCat = Object.create(myMammal);
+    myCat.name = "Henrietta";
+    myCat.saying = 'meow';
+    myCat.purr = function (n){
+      var i, s = "";
+      for(i = 0; i < n; i++){
+        if(s){
+          s += "-";
+        }
+        s += 'r';
+      }
+      return s;
+    };
+    myCat.get_name = function(){
+      return this.says() + " " + this.name + " " + this.says();
+    };
+    </script>
+</body>
+</html>

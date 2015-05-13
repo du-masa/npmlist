@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Question3</title>
+  <link rel="stylesheet" href="Question3.css">
+</head>
+<body>
+  <div class="container">
+    <div id="markup">
+      <article id="content" class="markdown-body">
+        <h1>Question3</h1>
+        <form id="question3" name="count">
+
+          <p>カウントする数を設定してください。</p>
+          <ul>
+            <li>
+              <select name="size">
+                <option value="10" selected>10</option>
+                <option value="100">100</option>
+                <option value="1000">1000</option>
+                <option value="10000">10000</option>
+                <option value="100000">100000</option>
+              </select>
+            </li>
+          </ul>
+
+          <p>昇順と降順のどちらで出力しますか？<p/>
+          <ul>
+            <li>
+              <input id="ascending" type="radio" name="order" value="ascending" checked>
+              <label for="ascending">昇順</label>
+            </li>
+            <li>
+              <input id="descending" type="radio" name="order" value="descending">
+              <label for="descending">降順</label>
+            </li>
+          </ul>
+
+          <p>桁数を出力しますか？</p>
+          <ul>
+            <li>
+              <input id="digits-true" type="radio" name="showDigits" value="true" checked>
+              <label for="digits-true">出力する</label>
+            </li>
+            <li>
+              <input id="digits-false" type="radio" name="showDigits" value="false">
+              <label for="digits-false">出力しない</label>
+            </li>
+          </ul>
+
+          <p>割り出す値を選択してください(複数選択可)。</p>
+          <ul>
+            <li>
+              <input name="denominator" id="denomin-1" type="checkbox" value="1">
+              <label for="denomin-1">１</label>
+            </li>
+            <li>
+              <input name="denominator" id="denomin-2" type="checkbox" value="2">
+              <label for="denomin-2">２</label>
+            </li>
+            <li>
+              <input name="denominator" id="denomin-3" type="checkbox" value="3">
+              <label for="denomin-3">３</label>
+            </li>
+            <li>
+              <input name="denominator" id="denomin-4" type="checkbox" value="4">
+              <label for="denomin-4">４</label>
+            </li>
+            <li>
+              <input name="denominator" id="denomin-5" type="checkbox" value="5">
+              <label for="denomin-5">５</label>
+            </li>
+            <li>
+              <input name="denominator" id="denomin-6" type="checkbox" value="6">
+              <label for="denomin-6">６</label>
+            </li>
+            <li>
+              <input name="denominator" id="denomin-7" type="checkbox" value="7">
+              <label for="denomin-7">７</label>
+            </li>
+            <li>
+              <input name="denominator" id="denomin-8" type="checkbox" value="8">
+              <label for="denomin-8">８</label>
+            </li>
+            <li>
+              <input name="denominator" id="denomin-9" type="checkbox" value="9">
+              <label for="denomin-9">９</label>
+            </li>
+          </ul>
+
+          <button name="submit" type="submit">出力開始</button>
+        </form>
+      </article>
+    </div>
+  </div>
+  <script src="Question3.js"></script>
+</body>
+</html>
