@@ -61,7 +61,4 @@ gulp.task('default',function(){
 
 console.log('logger');
 console.log('logger');
-console.log('logger');
-console.log('logger');
-console.log('logger');
-console.log('logger');
+console.error('error');
