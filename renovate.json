@@ -4,5 +4,5 @@
   "schedule": ["* 1 * * *"],
   "timezone": "Asia/Tokyo",
   "rebaseWhen": "behind-base-branch",
-  "updateNotScheduled": true
+  "updateNotScheduled": false 
 }
